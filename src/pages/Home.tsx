@@ -255,7 +255,7 @@ export default function Home() {
               <span className="text-blue-600 font-mono text-xs tracking-widest uppercase font-bold">Previous Editions</span>
             </div>
 
-            <div className="border border-white/10 bg-[#2988c6]/90 backdrop-blur-sm rounded-xl overflow-hidden flex flex-col md:flex-row mt-6">
+            <div className="border border-white/10 bg-[#0a0a0a] backdrop-blur-sm rounded-none overflow-hidden flex flex-col md:flex-row mt-6">
               <div className="md:w-[30%] shrink-0">
                 <img src={todIii} alt="Tale of the Darkroom III" className="w-full h-64 md:h-full object-contain" />
               </div>
@@ -278,7 +278,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="border border-white/10 bg-[#2988c6]/90 backdrop-blur-sm rounded-xl overflow-hidden flex flex-col md:flex-row mt-6">
+            <div className="border border-white/10 bg-[#0a0a0a] backdrop-blur-sm rounded-none overflow-hidden flex flex-col md:flex-row mt-6">
               <div className="md:w-[30%] shrink-0">
                 <img src={todIi} alt="Tale of the Darkroom II" className="w-full h-64 md:h-full object-contain" />
               </div>
@@ -298,7 +298,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="border border-white/10 bg-[#2988c6]/90 backdrop-blur-sm rounded-xl overflow-hidden flex flex-col md:flex-row mt-6">
+            <div className="border border-white/10 bg-[#0a0a0a] backdrop-blur-sm rounded-none overflow-hidden flex flex-col md:flex-row mt-6">
               <div className="md:w-[30%] shrink-0">
                 <img src={todI} alt="Tale of the Darkroom I" className="w-full h-64 md:h-full object-contain" />
               </div>

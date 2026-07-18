@@ -7,7 +7,7 @@ export function Layout({ children }: { children: ReactNode }) {
     <div className="min-h-screen flex flex-col bg-white">
       <Navbar />
       <main className="flex-1 page-enter">{children}</main>
-      <footer className="text-white" style={{ backgroundColor: '#2988c6' }}>
+      <footer className="text-white" style={{ backgroundColor: '#0a0a0a' }}>
         <div className="container mx-auto px-6 py-8">
           <div className="flex flex-col md:flex-row items-start justify-between gap-6">
             <div>
