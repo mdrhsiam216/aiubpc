@@ -38,7 +38,7 @@ export default function Partners() {
             <div className="flex items-center gap-4 mb-8">
               <span className="inline-block w-8 h-[1px]" style={{ backgroundColor: ACCENT }}></span>
               <span className="font-mono text-xs tracking-widest uppercase font-bold" style={{ color: ACCENT }}>
-                Official Partner
+                Official Partners
               </span>
             </div>
 
@@ -50,6 +50,19 @@ export default function Partners() {
                   AIUB Photography Club has signed a Memorandum of Intent (MOI) with Sony Bangladesh,
                   establishing a strategic partnership to support photography education through equipment
                   access, professional mentorship, and industry engagement.
+                </p>
+              </Card.Content>
+            </Card>
+
+            <Card variant="default" className="p-8 md:p-12 max-w-2xl mt-6">
+              <Card.Content className="p-0">
+                <h2 className="text-2xl font-serif text-gray-900 mb-2">Digital Shop</h2>
+                <p className="text-sm text-gray-500 mb-6">Official Partner</p>
+                <p className="text-gray-600 leading-relaxed">
+                  Digital Shop, Bangladesh's largest multi-brand camera and accessories showroom,
+                  provided AIUB Photography Club with more than 20 mirrorless cameras and lenses,
+                  giving members direct access to industry-standard equipment for learning and
+                  creative development.
                 </p>
               </Card.Content>
             </Card>
