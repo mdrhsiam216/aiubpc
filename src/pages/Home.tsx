@@ -84,7 +84,7 @@ export default function Home() {
 
   return (
     <Layout>
-      <section className="relative w-full bg-white">
+        <section className="relative w-full bg-white">
         <div className="relative w-full min-h-screen overflow-hidden">
           <img
             src={clubGroupPhoto}
@@ -135,6 +135,68 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+        <section className="mt-24 mb-24">
+          <div className="container mx-auto px-6 mb-8">
+            <div className="flex items-center gap-4">
+              <span className="inline-block w-8 h-[1px]" style={{ backgroundColor: ACCENT }}></span>
+              <span className="font-mono text-xs tracking-widest uppercase font-bold" style={{ color: ACCENT }}>
+                Flagship Exhibition
+              </span>
+            </div>
+          </div>
+
+          <div className="container mx-auto px-6">
+          <div className="border border-gray-200 bg-white relative overflow-hidden" data-testid="card-featured-tod4">
+            <img src={todIvMain} alt="Tale of the Darkroom IV" className="w-full h-auto object-contain" />
+
+            <div className="p-8 md:p-16 flex flex-col md:flex-row gap-8 justify-between items-start md:items-end">
+              <div className="max-w-2xl relative z-10">
+                <div className="flex items-center gap-4 mb-6">
+                  <span className="inline-block w-12 h-[1px]" style={{ backgroundColor: ACCENT }}></span>
+                  <span
+                    className="font-mono text-xs tracking-widest uppercase font-bold"
+                    style={{ color: ACCENT }}
+                    data-testid="badge-status-open"
+                  >
+                    Submissions Open
+                  </span>
+                </div>
+
+                <h2 className="text-4xl md:text-6xl font-serif text-gray-900 mb-6" data-testid="heading-tod4">
+                  Tale of the Darkroom IV
+                </h2>
+
+                <p className="text-lg text-gray-600 leading-relaxed" data-testid="text-tod4-desc">
+                  Submit your photographs and become part of AIUB Photography Club's most
+                  prestigious exhibition.
+                </p>
+              </div>
+
+              <div className="relative z-10 shrink-0 mt-8 md:mt-0">
+                <a
+                  href="https://www.aiubpc.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-3 text-white px-8 py-4 text-sm font-semibold tracking-widest uppercase transition-colors hover:text-red-400 bg-black"
+                  data-testid="link-darkroom-cta"
+                >
+                  Submit Your Work
+                </a>
+              </div>
+            </div>
+
+            {deadline && (
+              <div className="border-t border-gray-200 p-8 md:px-16">
+                <p className="text-center text-xs text-gray-500 uppercase tracking-widest mb-6">
+                  Submission closes in
+                </p>
+                <Countdown deadline={deadline} />
+              </div>
+            )}
+          </div>
+          </div>
+        </section>
 
       <div className="bg-white">
         <div className="container mx-auto px-6 pb-12">
@@ -189,64 +251,6 @@ export default function Home() {
             </div>
           </section>
         </div>
-
-        <section className="mb-24">
-          <div className="flex items-center gap-4 mb-8 px-6 max-w-7xl mx-auto">
-            <span className="inline-block w-8 h-[1px]" style={{ backgroundColor: ACCENT }}></span>
-            <span className="font-mono text-xs tracking-widest uppercase font-bold" style={{ color: ACCENT }}>
-              Flagship Exhibition
-            </span>
-          </div>
-
-          <div className="border-y border-gray-200 bg-white relative overflow-hidden" data-testid="card-featured-tod4">
-            <img src={todIvMain} alt="Tale of the Darkroom IV" className="w-full h-auto object-cover" />
-
-            <div className="p-8 md:p-16 flex flex-col md:flex-row gap-8 justify-between items-start md:items-end">
-              <div className="max-w-2xl relative z-10">
-                <div className="flex items-center gap-4 mb-6">
-                  <span className="inline-block w-12 h-[1px]" style={{ backgroundColor: ACCENT }}></span>
-                  <span
-                    className="font-mono text-xs tracking-widest uppercase font-bold"
-                    style={{ color: ACCENT }}
-                    data-testid="badge-status-open"
-                  >
-                    Submissions Open
-                  </span>
-                </div>
-
-                <h2 className="text-4xl md:text-6xl font-serif text-gray-900 mb-6" data-testid="heading-tod4">
-                  Tale of the Darkroom IV
-                </h2>
-
-                <p className="text-lg text-gray-600 leading-relaxed" data-testid="text-tod4-desc">
-                  Submit your photographs and become part of AIUB Photography Club's most
-                  prestigious exhibition.
-                </p>
-              </div>
-
-              <div className="relative z-10 shrink-0 mt-8 md:mt-0">
-                <a
-                  href="https://www.aiubpc.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-3 text-white px-8 py-4 text-sm font-semibold tracking-widest uppercase transition-colors hover:text-red-400 bg-black"
-                  data-testid="link-darkroom-cta"
-                >
-                  Submit Your Work
-                </a>
-              </div>
-            </div>
-
-            {deadline && (
-              <div className="border-t border-gray-200 p-8 md:px-16">
-                <p className="text-center text-xs text-gray-500 uppercase tracking-widest mb-6">
-                  Submission closes in
-                </p>
-                <Countdown deadline={deadline} />
-              </div>
-            )}
-          </div>
-        </section>
 
         <div className="container mx-auto px-6 pb-12">
           <section className="mb-24">

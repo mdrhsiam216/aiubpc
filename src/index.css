@@ -1,6 +1,15 @@
 @import "tailwindcss";
 @import "@heroui/styles";
 
+@theme {
+  --font-sans: 'Poppins', sans-serif;
+  --font-serif: 'Poppins', sans-serif;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
 *,
 *::before,
 *::after {
