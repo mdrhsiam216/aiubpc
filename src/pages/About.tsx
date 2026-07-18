@@ -44,7 +44,7 @@ const CONTACTS = [
 const HIGHLIGHTS = [
   { number: '20+', label: 'Years Active' },
   { number: '125+', label: 'Active Members' },
-  { number: '7', label: 'Exhibitions Hosted' },
+  { number: '9', label: 'Exhibitions Hosted' },
   { number: '1000+', label: 'Photographs Exhibited' },
 ];
 
@@ -129,10 +129,6 @@ export default function About() {
                         <dt className="text-sm text-gray-500">Focus</dt>
                         <dd className="text-sm font-medium text-gray-900">Photography & Visual Arts</dd>
                       </div>
-                      <div className="flex justify-between items-center">
-                        <dt className="text-sm text-gray-500">Office</dt>
-                        <dd className="text-sm font-medium text-gray-900">Student Affairs</dd>
-                      </div>
                     </dl>
                   </Card.Content>
                 </Card>
@@ -211,52 +207,6 @@ export default function About() {
                   </div>
                 </div>
               ))}
-            </div>
-          </section>
-
-          <section>
-            <div className="flex items-center gap-4 mb-8">
-              <span className="inline-block w-8 h-[1px]" style={{ backgroundColor: ACCENT }}></span>
-              <span className="font-mono text-xs tracking-widest uppercase font-bold" style={{ color: ACCENT }}>
-                Get in Touch
-              </span>
-            </div>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-              {CONTACTS.map((contact) => {
-                const Icon = contact.icon;
-                return (
-                  <a
-                    key={contact.label}
-                    href={contact.href}
-                    target={contact.href.startsWith('http') ? '_blank' : undefined}
-                    rel={contact.href.startsWith('http') ? 'noopener noreferrer' : undefined}
-                    className="block group"
-                  >
-                    <Card variant="default" className={`h-full gap-0 transition-all duration-200 group-hover:shadow-lg group-hover:-translate-y-1 border ${contact.bgClass}`}>
-                      <Card.Header className="items-center pt-6">
-                        <div className={`w-12 h-12 rounded-full flex items-center justify-center mb-2 ${
-                          contact.color === 'success'
-                            ? 'bg-emerald-100 text-emerald-600'
-                            : contact.color === 'accent'
-                              ? 'bg-blue-100 text-blue-600'
-                              : contact.color === 'warning'
-                                ? 'bg-amber-100 text-amber-600'
-                                : 'bg-gray-100 text-gray-600'
-                        }`}>
-                          <Icon size={20} />
-                        </div>
-                        <Card.Title className="text-base">{contact.label}</Card.Title>
-                      </Card.Header>
-                      <Card.Content className="text-center pb-6">
-                        <p className="text-sm text-gray-600 break-all">{contact.value}</p>
-                        <Chip color={contact.color} variant="soft" size="sm" className="mt-3">
-                          {contact.href.startsWith('http') ? 'Visit' : 'Call'}
-                        </Chip>
-                      </Card.Content>
-                    </Card>
-                  </a>
-                );
-              })}
             </div>
           </section>
         </div>
