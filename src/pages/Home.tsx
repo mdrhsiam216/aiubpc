@@ -123,7 +123,7 @@ export default function Home() {
                 Meet the Club
               </a>
               <a
-                href="https://www.aiubpc.com"
+                href="https://tod4.aiubpc.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-3 text-white px-8 py-4 text-sm font-semibold tracking-widest uppercase transition-colors hover:text-red-400 bg-black"
@@ -175,7 +175,7 @@ export default function Home() {
 
               <div className="relative z-10 shrink-0 mt-8 md:mt-0">
                 <a
-                  href="https://www.aiubpc.com"
+                  href="https://tod4.aiubpc.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center gap-3 text-white px-8 py-4 text-sm font-semibold tracking-widest uppercase transition-colors hover:text-red-400 bg-black"

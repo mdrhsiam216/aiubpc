@@ -40,7 +40,7 @@ export function Navbar() {
             </Link>
           ))}
           <a
-            href="https://www.aiubpc.com"
+            href="https://tod4.aiubpc.com"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-white text-[#2988c6] hover:bg-white/90 text-sm tracking-widest uppercase px-6 py-2.5 font-semibold transition-colors"
@@ -80,7 +80,7 @@ export function Navbar() {
               </Link>
             ))}
             <a
-              href="https://www.aiubpc.com"
+              href="https://tod4.aiubpc.com"
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setOpen(false)}
