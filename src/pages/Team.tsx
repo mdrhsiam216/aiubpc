@@ -138,15 +138,15 @@ function BoardCard({ member, isFeatured = false }: { member: BoardMember; isFeat
 export default function Team() {
   return (
     <Layout>
-      <section className="relative overflow-hidden bg-gradient-to-br from-emerald-950 via-teal-900 to-cyan-950">
-        <div className="absolute inset-0 opacity-20">
+      <section className="relative overflow-hidden bg-gradient-to-br from-blue-950 via-blue-900 to-cyan-950">
+        <div className="absolute inset-0 opacity-40">
           <img
             src={clubGroupPhoto}
             alt=""
             className="w-full h-full object-cover"
           />
         </div>
-        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
         <div className="container mx-auto px-6 pt-32 pb-20 relative z-10">
           <div className="max-w-3xl">
             <Chip className="mb-6 bg-white/10 text-white border border-white/20 transition-all duration-300 hover:bg-white/20">
