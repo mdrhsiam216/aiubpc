@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { Layout } from '@/components/Layout';
 import { Countdown } from '@/components/Countdown';
 import { api } from '@/lib/api';
-import todIvMain from '@/assets/tod-iv-main.jpeg';
+import todIvMain from '@/assets/07-august-cover.jpeg';
 import todIi from '@/assets/todii.jpg';
 import todIii from '@/assets/todiii.jpg';
 import todI from '@/assets/tod-i.png';
