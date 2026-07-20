@@ -7,11 +7,36 @@ import todIi from '@/assets/todii.jpg';
 import todIii from '@/assets/todiii.jpg';
 import todI from '@/assets/tod-i.png';
 import clubGroupPhoto from '@/assets/club-group-photo.jpg';
+import mentorNiaz from '@/assets/mentor-niaz-majumdar.png';
+import mentorSarowar from '@/assets/mentor-sarowar-hossain.png';
+import mentorTasnova from '@/assets/mentor-tasnova-ulfat.png';
+import teamPhoto from '@/assets/team.jpg';
 
 const CLUB_STATS = [
   { label: 'Years Active', value: '20+' },
   { label: 'Active Members', value: '125+' },
   { label: 'Exhibitions Hosted', value: '7' },
+];
+
+const MENTORS = [
+  {
+    name: 'Mohammed Niaz Majumdar',
+    title: 'Senior Assistant Professor',
+    department: 'Department of Journalism and Mass Communication',
+    photo: mentorNiaz,
+  },
+  {
+    name: 'Dr. Md. Sarowar Hossain',
+    title: 'Assistant Professor',
+    department: 'Department of Natural Science (Physics)',
+    photo: mentorSarowar,
+  },
+  {
+    name: 'Tasnova Jerin Ulfat',
+    title: 'Lecturer',
+    department: 'Department of Social Science',
+    photo: mentorTasnova,
+  },
 ];
 
 const ACCENT = '#22559f';
@@ -324,6 +349,57 @@ export default function Home() {
               </div>
             </div>
           </section>
+        </div>
+
+        <div className="bg-gray-50">
+          <div className="container mx-auto px-6 py-20">
+            <section>
+              <div className="flex items-center gap-4 mb-8">
+                <span className="inline-block w-8 h-[1px]" style={{ backgroundColor: ACCENT }}></span>
+                <span className="font-mono text-xs tracking-widest uppercase font-bold" style={{ color: ACCENT }}>
+                  Mentors
+                </span>
+              </div>
+
+              <div className="grid md:grid-cols-3 gap-6">
+                {MENTORS.map((mentor) => (
+                  <div key={mentor.name} className="bg-white border border-gray-200 sm:flex transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
+                    <div className="sm:w-48 h-56 sm:h-auto shrink-0 overflow-hidden bg-gray-100">
+                      <img
+                        src={mentor.photo}
+                        alt={mentor.name}
+                        className="w-full h-full object-cover object-top"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div className="flex-1 p-6 flex flex-col justify-center gap-3">
+                      <div>
+                        <p className="font-serif text-lg text-gray-900">{mentor.name}</p>
+                        <p className="text-xs text-gray-500 mt-1">{mentor.department}</p>
+                      </div>
+                      <div className="h-px w-10" style={{ backgroundColor: ACCENT }}></div>
+                      <p className="text-sm font-medium" style={{ color: ACCENT }}>{mentor.title}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              <div className="mt-10">
+                <div className="flex items-center gap-4 mb-6">
+                  <span className="inline-block w-8 h-[1px]" style={{ backgroundColor: ACCENT }}></span>
+                  <span className="font-mono text-xs tracking-widest uppercase font-bold" style={{ color: ACCENT }}>
+                    11th Executive Committee
+                  </span>
+                </div>
+                <img
+                  src={teamPhoto}
+                  alt="11th Executive Committee – AIUB Photography Club"
+                  className="w-full h-auto object-cover border border-gray-200"
+                  loading="lazy"
+                />
+              </div>
+            </section>
+          </div>
         </div>
       </div>
     </Layout>
